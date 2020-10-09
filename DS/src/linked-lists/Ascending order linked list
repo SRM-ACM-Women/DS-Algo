@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+struct node
+{
+  int data;
+  struct node *next;
+}*head,*temp,*ref;
+int main()
+{
+  int n;
+  cin>>n;
+  head=0;
+  while(n--)
+  {
+    struct node* new_node =(struct node*) malloc(sizeof(struct node));
+    cin>>new_node->data;
+    new_node->next=0;
+    if(head==0)
+    {
+      head=new_node;
+      temp=new_node;
+    }
+    else
+    {
+      temp->next=new_node;
+      temp=new_node;
+    }
+  }
+  for(temp=head;temp!=0;temp=temp->next)
+  {
+    for(ref=temp->next;ref!=0;ref=ref->next)
+    {
+      if(temp->data > ref->data)
+      {
+        int tmp=temp->data;
+        temp->data=ref->data;
+        ref->data= tmp;
+      }
+    }
+  }
+  temp=head;
+  cout<<"Marks : ";
+  while(temp!=0)
+  {
+    cout<<"->"<<temp->data;
+    temp=temp->next;
+  }
+  return 0;
+}
+       
