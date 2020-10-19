@@ -1,11 +1,11 @@
 # A collection of various data structures and algorithms implementations in different programming languages.  
 
 <div align="center"><p align="center">
-  <a href="https://github.com/devangi2000/DS-Algo/"><img src="https://img.shields.io/github/stars/devangi2000/DS-Algo" alt="Stars Badge"/></a>
-  <a href="https://github.com/devangi2000/DS-Algo/"><img src="https://img.shields.io/github/forks/devangi2000/DS-Algo" alt="Forks Badge"/></a>
-  <a href="https://github.com/devangi2000/DS-Algo/pulls"><img src="https://img.shields.io/github/issues-pr/devangi2000/DS-Algo" alt="Pull Requests Badge"/></a>
-  <a href="https://github.com/devangi2000/DS-Algo/issues"><img src="https://img.shields.io/github/issues/devangi2000/DS-Algo" alt="Issues Badge"/></a>
-  <a href="https://github.com/devangi2000/DS-Algo/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/devangi2000/DS-Algo"></a>
+  <a href="https://github.com/SRM-ACM-Women/DS-Algo/"><img src="https://img.shields.io/github/stars/SRM-ACM-Women/DS-Algo" alt="Stars Badge"/></a>
+  <a href="https://github.com/SRM-ACM-Women/DS-Algo/"><img src="https://img.shields.io/github/forks/SRM-ACM-Women/DS-Algo" alt="Forks Badge"/></a>
+  <a href="https://github.com/SRM-ACM-Women/DS-Algo/pulls"><img src="https://img.shields.io/github/issues-pr/SRM-ACM-Women/DS-Algo" alt="Pull Requests Badge"/></a>
+  <a href="https://github.com/SRM-ACM-Women/DS-Algo/issues"><img src="https://img.shields.io/github/issues/SRM-ACM-Women/DS-Algo" alt="Issues Badge"/></a>
+  <a href="https://github.com/SRM-ACM-Women/DS-Algo/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/SRM-ACM-Women/DS-Algo"></a>
   </p>
 </div>
 Series of notebooks and codes that walks through the fundamentals of data structures and algorithms.
