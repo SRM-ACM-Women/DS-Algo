@@ -1,0 +1,89 @@
+#include<iostream.h>
+#include<conio.h>
+
+struct Node
+{
+int info;
+ Node *next;
+};
+
+Node *top=NULL,*tmp;
+
+void Push()
+{
+tmp=new Node;
+ if(tmp==NULL)
+ {
+  cout<<"\n Overflow";
+  return;
+ }
+ cout<<"\n Enter information"<<endl;
+ cin>>tmp->info;
+tmp->next=NULL;
+ if(top==NULL)
+ top=tmp;
+ else
+ {
+tmp->next=top;
+  top=tmp;
+ }
+}
+
+void Pop()
+{
+tmp=top;
+ if(tmp==NULL)
+ {
+  cout<<"\n Underflow";
+  return;
+ }
+ cout<<"\n Information to be deleted is  "<<tmp->info;
+ top=tmp->next;
+ delete tmp;
+}
+
+void Show()
+{
+tmp=top;
+ if(tmp==NULL)
+ {
+  cout<<"\n No element to show";
+  return;
+ }
+ cout<<"\n Stack is"<<endl;
+ while(tmp!=NULL)
+ {
+  cout<<tmp->info<<endl;
+tmp=tmp->next;
+ }
+}
+
+void main()
+{
+int ch=1;
+ while(ch!=4)
+ {
+clrscr();
+  cout<<"\n 1. PUSH";
+  cout<<"\n 2. POP";
+  cout<<"\n 3. SHOW";
+  cout<<"\n 4. EXIT";
+  cout<<endl;
+  cout<<"\n Enter a choice from 1 to 4"<<endl;
+  cin>>ch;
+
+  switch(ch)
+  {
+   case 1:Push();
+	  break;
+   case 2:Pop();
+	  break;
+   case 3:Show();
+	  break;
+   case 4:cout<<"\n Bye!!!";
+	  break;
+default:cout<<"\n Enter a choice from 1 to 4 only";
+  }
+getch();
+ }
+}
